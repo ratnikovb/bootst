@@ -45,6 +45,10 @@ a:hover, a:focus{
     font: bold 1.875rem "Montserrat";
     padding-top: 30px;
 }
+.logo-footer{
+    color: #cccccc;
+    font: bold 3.2857rem "Montserrat";
+}
 nav{
 
 }
@@ -61,6 +65,7 @@ nav ul li{
     padding:12px 0;
     margin-right: 50px;
     display: inline-block;
+    position: relative;
 }
 nav ul li:last-of-type{margin-right: 0}
 /*
@@ -70,8 +75,8 @@ nav ul li:not(:nth-last-child(-n+2)):hover{
     -webkit-box-shadow: 0px 3px 0px 0px #fce38a;
     -moz-box-shadow:    0px 3px 0px 0px #fce38a;
     box-shadow:         0px 3px 0px 0px #fce38a;
-}
 */
+nav ul li:hover{color:#fce38a;}
 nav ul li:not(:nth-last-child(-n+2)):hover::after{
     width: 100%;
     height: 5px;
@@ -97,7 +102,9 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
     padding: 12px 30px;
     text-align: center;
     text-transform: uppercase;
-
+    display: inline-block;
+    border: 3px solid #fff;
+    line-height: 1.1rem;
 }
 /*---------    facts    ---------*/
 #facts {
@@ -186,7 +193,7 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
 }
 
 .work-description-text {
-        font: 300 italic 1.1rem "roboto";
+    font: 300 italic 1.1rem "roboto";
 }
 
 .work-description-wraper {
@@ -224,6 +231,7 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
 .section-header-text {
     padding-top: 45px;
     padding-bottom: 95px;
+    font: normal 1rem "Roboto";
 }
 
 .section-header-mb {
@@ -237,6 +245,8 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
     border: none;
     outline: none;
     background: none;
+    text-align: center;
+
 }
 .map-btn:after{
     display: block;
@@ -250,4 +260,21 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
 }
 .map i{
 
+}
+
+.instagram-container div a{
+    vertical-align: middle;
+    display: inline-block;
+    padding-top: 2px;
+}
+
+.footer-blog-container:not(:first-of-type){
+    padding-top: 30px;}
+
+.head-md {
+    font: normal 1rem "Montserrat";
+}
+
+.subhead-md {
+    font: thin italic 1.1rem "Roboto";
 }
