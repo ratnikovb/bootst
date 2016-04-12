@@ -11,22 +11,6 @@ a:hover, a:focus{
     visibility: hidden;
     content: "";
 }
-#banner{
-    background: url('../images/bg1.jpg') center top/cover no-repeat;
-    color:#fff;
-}
-.banner-overlay{
-    background: -moz-linear-gradient(top,  rgba(243,139,139,0.9)0%,  rgba(252,227,138,0.9)100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(243,139,139,0.9)0%,  rgba(252,227,138,0.9)100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(243,139,139,0.9)0%,  rgba(252,227,138,0.9)100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    z-index: -1;
-}
-/*
-.container-inner{
-    margin: 0 auto;
-    width: 1170px;
-}
-*/
 .no-padding{
     padding-right: 0;
     padding-left: 0;
@@ -38,7 +22,18 @@ a:hover, a:focus{
 .row.no-gutters > [class^="col-"],
 .row.no-gutters > [class*=" col-"] {
    padding-right: 0;
-   padding-left: 0;
+    padding-left: 0;
+}
+
+#banner{
+    background: url('../images/bg1.jpg') center top/cover no-repeat;
+    color:#fff;
+}
+.banner-overlay{
+    background: -moz-linear-gradient(top,  rgba(243,139,139,0.9)0%,  rgba(252,227,138,0.9)100%);
+    background: -webkit-linear-gradient(top,  rgba(243,139,139,0.9)0%,  rgba(252,227,138,0.9)100%);
+    background: linear-gradient(to bottom,  rgba(243,139,139,0.9)0%,  rgba(252,227,138,0.9)100%);
+    z-index: -1;
 }
 /*-------------header--------------*/
 .logo{
@@ -48,9 +43,6 @@ a:hover, a:focus{
 .logo-footer{
     color: #cccccc;
     font: bold 3.2857rem "Montserrat";
-}
-nav{
-
 }
 nav ul{
     list-style: none;
@@ -76,7 +68,8 @@ nav ul li:not(:nth-last-child(-n+2)):hover{
     -moz-box-shadow:    0px 3px 0px 0px #fce38a;
     box-shadow:         0px 3px 0px 0px #fce38a;
 */
-nav ul li:hover{color:#fce38a;}
+nav ul li:not(:nth-last-child(-n+2)):hover{color:#fce38a;}
+/*
 nav ul li:not(:nth-last-child(-n+2)):hover::after{
     width: 100%;
     height: 5px;
@@ -85,9 +78,25 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
     top: 100%;
     left: 0;
     content: "";
-    transition: all 700ms ease;}
+    transition: all 0.3s ease;}
+*/
+
+nav ul li:not(:nth-last-child(-n+2))::after{
+    width: 100%;
+    height: 5px;
+    background: #fce38a;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: "";
+    transform: scale(0, 0);
+    transition: all 0.3s ease;}
+nav ul li:not(:nth-last-child(-n+2)):hover::after{
+    transform: scale(1, 1);
+}
 
 /*------------baner------------*/
+.banner-wrap{padding: 12.14rem 0 16.42rem}
 .banner h2{
     font: 400 5.142rem "Kaushan Script";
 
@@ -95,7 +104,17 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
 .banner h1{
     text-transform: uppercase;
     font: bold 10.714rem "Montserrat";
+    line-height: 10rem;
 }
+.banner h1:after{
+    display: block;
+    content: '';
+    background-color: #fff;
+    width: 60px;
+    height: 3px;
+    position: relative;
+    left: calc(50% - 30px);
+    bottom: -3.0714rem;}
 
 .main-button{
     font: bold 1rem "Montserrat";
@@ -105,6 +124,7 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
     display: inline-block;
     border: 3px solid #fff;
     line-height: 1.1rem;
+    margin-top: 8.92rem;
 }
 /*---------    facts    ---------*/
 #facts {
@@ -175,7 +195,6 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
 .blog-item-views,.blog-item-coments{
     display: inline-block;
 }
-
 
 
 #clients {
@@ -273,8 +292,9 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
 
 .head-md {
     font: normal 1rem "Montserrat";
+    text-transform: uppercase;
 }
 
 .subhead-md {
-    font: thin italic 1.1rem "Roboto";
+    font: light italic 1.1rem "Roboto";
 }
