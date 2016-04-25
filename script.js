@@ -10,7 +10,7 @@ $(document).ready(function () {
         });
 
     });
-    $(".spincrement").spincrement();
+//    $(".spincrement").spincrement();
 
   var show = true;
     var countbox = "#facts";
@@ -29,7 +29,7 @@ $(document).ready(function () {
         if(w_top + 200 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){
             $(".spincrement").spincrement({
                 thousandSeparator: "",
-                duration: 1200
+                duration: 12000
             });
 
             show = false;
