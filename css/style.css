@@ -255,7 +255,7 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
 .section-header-text {
     padding-top: 45px;
     padding-bottom: 95px;
-    line-height: 1.7142rem;
+    line-height: 1.7142rem !important;
     font: 400 1rem "Roboto";
     color: #999999;
 }
@@ -298,8 +298,15 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
     color: #999999;
 }
 /*---------footer----------*/
-input[type="email"]::-webkit-input-placeholder{color:#cccccc; }
-.footer-logo{
+#footer {
+    background: #f8f8f8;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+    color: #cccccc;
+}
+
+.footer-logo {
     color: #cccccc;
     font: bold 3.2857rem "Montserrat";
 }
@@ -332,4 +339,38 @@ input[type="email"]::-webkit-input-placeholder{color:#cccccc; }
 
 .footer .section-header-text{
     padding-bottom: 50px;
+}
+
+.footer-social-bar nav{
+    font-size: 1.1428rem;
+    color:#95e1d3;
+    display: inline-block;
+}
+.footer-social-bar nav i{
+    margin-left: 1.4285rem;
+}
+.footer input[type="email"]{
+    height: 40px;
+    width: 230px;
+    border: 1px solid #e7e7e7;
+    padding-left: 1rem;
+    outline: none;
+
+}
+
+.subsc-btn {
+    font: 700 1rem "Montserrat";
+    color: #fff;
+    text-transform: uppercase;
+    background: #95e1d3;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border: none;
+
+}
+.subsc-btn::active{
+    border: none;
 }
