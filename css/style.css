@@ -24,7 +24,14 @@ a:hover, a:focus{
    padding-right: 0;
     padding-left: 0;
 }
-
+.remove-all-margin-padding {
+    margin: 0 ! important;
+    padding: 0 ! important;
+}
+img{
+    height: auto;
+    max-width: 100%;
+}
 #banner{
     background: url('../images/bg1.jpg') center top/cover no-repeat;
     color:#fff;
@@ -157,6 +164,9 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
 /*----------  Works  -----------*/
 .work-item-wraper {
     position: relative;
+}
+.work-item-wraper .subhead-md{
+    color: #fff;
 }
 .work-item-overlay{
     display: flex;
