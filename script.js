@@ -10,7 +10,8 @@ $(document).ready(function () {
         });
 
     });
-//    $(".spincrement").spincrement();
+
+    //   spincrement  Initialization
 
   var show = true;
     var countbox = "#facts";
@@ -35,4 +36,41 @@ $(document).ready(function () {
             show = false;
         }
     });
+    //fitText Initialization
+
+    $("#resp_h2").fitText(0.7, { minFontSize: '20px', maxFontSize: '70px' });
+    $("#resp_h1").fitText(0.7, { minFontSize: '20px', maxFontSize: '150px' });
+
+    // accordeon
+
+
+function openFirstPanel() {
+    $('.acc_content:first').slideDown().addClass('active');
+    $('.acc_panel:first').children('.fa-angle-down').toggleClass('fa-rotate-180');
+}
+
+(function ($) {
+        $('.acc_content').hide();
+        var allPanels = $('.acc_content').hide();
+
+    openFirstPanel();
+
+    $('.acc_panel').click(function () {
+        $this = $(this);
+        $target = $this.next();
+
+
+        if ($target.hasClass('active')) {
+            $target.removeClass('active').slideUp();
+            $this.children('.fa-angle-down').removeClass('fa-rotate-180');
+        } else {
+            allPanels.removeClass('active').slideUp();
+            $target.addClass('active').slideDown();
+            $this.children('.fa-angle-down').addClass('fa-rotate-180');
+        }
+
+        return false;
+    });
+
+})(jQuery);
 });

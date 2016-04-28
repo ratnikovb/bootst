@@ -935,33 +935,17 @@ pre code {
     .container {
         width: 750px
     }
-/*
-    html {
-        font-size: 64%;
-        font-size: 9px;
-    }
-*/
 }
 
 @media (min-width:992px) {
     .container {
         width: 970px
     }
-/*
-    html {
-        font-size: 82.6666%;
-        font-size: 12px;}
-*/
 }
-
 @media (min-width:1200px) {
     .container {
         width: 1170px
     }
-/*
-    html {
-        font-size: 14px;}
-*/
 }
 
 .container-fluid {
@@ -3887,7 +3871,7 @@ button.close {
     background-color: #fff;
     border: 1px solid #999;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
+/*    border-radius: 6px;*/
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     -webkit-background-clip: padding-box;
@@ -3931,7 +3915,7 @@ button.close {
 
 .modal-body {
     position: relative;
-    padding: 15px
+/*    padding: 15px*/
 }
 
 .modal-footer {
@@ -3978,6 +3962,12 @@ button.close {
 @media (min-width:992px) {
     .modal-lg {
         width: 900px
+    }
+}
+
+@media (min-width:1280px) {
+    .modal-lg {
+        width: 1200px
     }
 }
 

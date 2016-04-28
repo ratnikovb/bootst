@@ -71,7 +71,7 @@ nav ul li:not(:nth-last-child(-n+2)):hover{
     -moz-box-shadow:    0px 3px 0px 0px #fce38a;
     box-shadow:         0px 3px 0px 0px #fce38a;
 */
-nav ul li:not(:nth-last-child(-n+2)):hover{color:#fce38a;}
+header ul li:not(:nth-last-child(-n+2)):hover{color:#fce38a;}
 /*
 nav ul li:not(:nth-last-child(-n+2)):hover::after{
     width: 100%;
@@ -84,7 +84,7 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
     transition: all 0.3s ease;}
 */
 
-nav ul li:not(:nth-last-child(-n+2))::after{
+header ul li:not(:nth-last-child(-n+2))::after{
     width: 100%;
     height: 5px;
     background: #fce38a;
@@ -94,7 +94,7 @@ nav ul li:not(:nth-last-child(-n+2))::after{
     content: "";
     transform: scale(0, 0);
     transition: all 0.3s ease;}
-nav ul li:not(:nth-last-child(-n+2)):hover::after{
+header ul li:not(:nth-last-child(-n+2)):hover::after{
     transform: scale(1, 1);
 }
 
@@ -108,6 +108,7 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
     text-transform: uppercase;
     font: bold 10.714rem "Montserrat";
     line-height: 10rem;
+/*    word-wrap: break-word;*/
 }
 .banner h1:after{
     display: block;
@@ -133,6 +134,17 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
     color:#fce38a;
     background: #fff;
 }
+
+/*---------    about     --------*/
+.about .head-md{
+    font-size: 1.2875rem;
+    color: #fff;
+}
+.about .tm-social-bar {
+    color: #fff;
+    font-size: 25px;
+}
+
 /*---------    facts    ---------*/
 #facts {
     background: #95e1d3;
@@ -161,14 +173,82 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
 .feature {
 
 }
-/*----------  Works  -----------*/
-.work-item-wraper {
-    position: relative;
+.services .fa {line-height: 4.2857rem;}
+/*--------  services2  --------*/
+.accordion {
+    overflow: hidden;
 }
-.work-item-wraper .subhead-md{
-    color: #fff;
+.services .fa,
+.acc_panel .fa{
+    font-size: 2.2857rem;
+    vertical-align: middle;
+    color: #95e1d3;
 }
-.work-item-overlay{
+.acc_panel .head-md{
+    display: inline-block;
+    padding-left: 14px;
+}
+.acc_item{
+    margin-bottom: 10px;
+}
+.acc_item:last-of-type{
+    margin-bottom: 0;
+}
+.accordion .acc_item .acc_panel,
+.accordion .acc_item .acc_content {
+    display: block;
+    border: 1px solid #e5e5e5;
+}
+.accordion .acc_panel{
+    padding: 15px;
+}
+
+.accordion .acc_content {
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.panel a {
+    text-decoration: none;
+}
+/*-------------- team --------------*/
+
+.team .tm-social-bar .fa {
+  display: inline-block;
+  font-size: 25px;
+  color: #f38181;
+  vertical-align: middle;
+}
+
+
+/*.tm-social-bar {
+  display: inline-block;
+  font-size: 25px;
+  color: #f38181;
+  vertical-align: middle;
+}*/
+
+.tm-social {
+  display: inline-block;
+  vertical-align: middle;
+  background: #fce38a;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+}
+
+.tm-social-bar .tm-social:hover {
+  background: #f38181;
+}
+.tm-social-bar .tm-social:hover .fa{
+  color: #fff;
+}
+.item-wraper {
+  position: relative;
+}
+
+.item-overlay{
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,11 +262,29 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
     background: linear-gradient(to bottom,  rgba(243,139,139,0.9)0%,  rgba(252,227,138,0.9)100%);
     transition: all 0.2s ease;
 }
-.work-item-wraper:hover .work-item-overlay{
+/*.item-wraper:hover .content {}*/
+
+.team .item-wraper:hover .item-overlay,
+.about .item-wraper:hover .item-overlay{
+  transform: translate(-10px, -10px) ;
+  opacity: 1;
+  box-shadow: 10px 10px 0 #95e1d3;
+}
+.team-mate-content {
+  width: 100%;
+  height: 100%;
+}
+/*----------  Works  -----------*/
+
+.works .item-wraper .subhead-md{
+    color: #fff;
+}
+.works .item-wraper:hover .item-overlay{
 /*   display: block;*/
     opacity: 1;
 }
 /*------       blog       ------*/
+
 .blog-item-::before{
     content: "";
     width: 100%;
@@ -230,7 +328,7 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
     color: #fff;
 }
 
-.fa-picture-o {
+.work .fa-picture-o {
     font-size: 2.285rem;
 
 }
@@ -275,6 +373,7 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
 }
 
 .map-btn {
+    display: inline-block;
     color: #f38181;
     font: bold 1.7142rem "Montserrat";
     text-transform: uppercase;
@@ -282,7 +381,8 @@ nav ul li:not(:nth-last-child(-n+2)):hover::after{
     outline: none;
     background: none;
     text-align: center;
-
+    padding: 50px 0 12px;
+    margin-bottom: 6rem;
 }
 .map-btn:after{
     display: block;
@@ -338,10 +438,11 @@ input[type="email"]::-webkit-input-placeholder {
     padding-top: 20px;
     display: block;
 }
-.instagram-container div a{
+.instagram-container a img{
     vertical-align: middle;
     display: inline-block;
     padding-top: 2px;
+    padding-right: 2px;
 }
 
 .footer-blog-container:not(:first-of-type){
@@ -350,7 +451,10 @@ input[type="email"]::-webkit-input-placeholder {
 .footer .section-header-text{
     padding-bottom: 50px;
 }
-
+.footer-social-bar {
+    padding:20px 0 40px;
+    border-top: 1px solid #e5e5e5;
+}
 .footer-social-bar nav{
     font-size: 1.1428rem;
     color:#95e1d3;
@@ -384,3 +488,45 @@ input[type="email"]::-webkit-input-placeholder {
 .subsc-btn::active{
     border: none;
 }
+/*----- Media queries -----*/
+
+
+@media (max-width:480px){
+    .banner h1{
+        line-height: 4rem;
+    }    html {
+        font-size: 9px;
+    }
+
+}
+/*
+@media (min-width:768px) {
+    html {
+        font-size: 12px;
+    }
+}
+*/
+
+@media (max-width:768px) {
+    .counts-item {
+        float: none;
+        width: 100%;
+    }
+}
+
+/*
+@media (min-width:992px) {
+    html{
+font-size: 14px;}
+    }
+@media (min-width:1200px) {
+    html {
+        font-size: 14px;
+    }
+}*/
+
+.map {
+
+}
+
+
