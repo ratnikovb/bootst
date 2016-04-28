@@ -144,15 +144,13 @@ header ul li:not(:nth-last-child(-n+2)):hover::after{
     color: #fff;
     font-size: 25px;
 }
-<<<<<<< HEAD
+
 .about .item-wraper{
     max-width:360px;
-    padding-top: 30px;
     margin: 0 auto;
 
 }
-=======
->>>>>>> c5916fb684b917f081c30a8bfaf0e792c0c4ec18
+
 
 /*---------    facts    ---------*/
 #facts {
@@ -330,8 +328,9 @@ header ul li:not(:nth-last-child(-n+2)):hover::after{
 }
 
 .description-header {
-    font: normal 1rem "Montserrat";
-    text-transform: uppercase;
+    line-height: 1.7142rem !important;
+    font: 400 1rem "Roboto";
+    color: #999999
 }
 
 .work-description-text {

@@ -27,15 +27,15 @@ $(document).ready(function () {
     var countbox = "#facts";
     $(window).on("scroll load resize", function () {
 
-        if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+        if (!show) return false; //cancel the animation if it shown
 
         var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
         var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
 
-        var w_height = $(window).height(); // Высота окна браузера
-        var d_height = $(document).height(); // Высота всего документа
+        var w_height = $(window).height();
+        var d_height = $(document).height();
 
-        var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+        var e_height = $(countbox).outerHeight(); //countbox full height  Полная высота блока со счетчиками
 
         if (w_top + 200 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
             $(".spincrement").spincrement({
@@ -46,6 +46,7 @@ $(document).ready(function () {
             show = false;
         }
     });
+
     //fitText Initialization
 
 
@@ -99,31 +100,34 @@ $(document).ready(function () {
 
 function openFirstPanel() {
     $('.acc_content:first').slideDown().addClass('active');
-    $('.acc_panel:first').children('.fa-angle-down').toggleClass('fa-rotate-180');
+    $('.acc_panel:first').children('.fa-angle-down').addClass('fa-rotate-180');
 }
 
-(function ($) {
+
+
+    (function ($) {
         $('.acc_content').hide();
         var allPanels = $('.acc_content').hide();
 
     openFirstPanel();
 
-    $('.acc_panel').click(function () {
-        $this = $(this);
-        $target = $this.next();
+        $('.acc_panel').click(function () {
+            $this = $(this);
+            $target = $this.next();
 
 
-        if ($target.hasClass('active')) {
-            $target.removeClass('active').slideUp();
-            $this.children('.fa-angle-down').removeClass('fa-rotate-180');
-        } else {
-            allPanels.removeClass('active').slideUp();
-            $target.addClass('active').slideDown();
-            $this.children('.fa-angle-down').addClass('fa-rotate-180');
-        }
+            if ($target.hasClass('active')) {
+                $target.removeClass('active').slideUp();
+                $this.children('.fa-angle-down').removeClass('fa-rotate-180');
 
-        return false;
-    });
+            } else {
+                allPanels.removeClass('active').slideUp();
+                $target.addClass('active').slideDown();
+                $this.children('.fa-angle-down').addClass('fa-rotate-180');
+            }
 
-})(jQuery);
+            return false;
+        });
+
+    })(jQuery);
 });
