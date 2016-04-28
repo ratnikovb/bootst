@@ -20,11 +20,6 @@ $(document).ready(function () {
         });
 
     });
-<<<<<<< HEAD
-=======
-
-    //   spincrement  Initialization
->>>>>>> c5916fb684b917f081c30a8bfaf0e792c0c4ec18
 
     //   spincrement  Initialization
 
@@ -53,7 +48,7 @@ $(document).ready(function () {
     });
     //fitText Initialization
 
-<<<<<<< HEAD
+
     $("#resp_h2").fitText(0.7, {
         minFontSize: '20px'
         , maxFontSize: '70px'
@@ -95,7 +90,7 @@ $(document).ready(function () {
         });
 
     })(jQuery);
-=======
+
     $("#resp_h2").fitText(0.7, { minFontSize: '20px', maxFontSize: '70px' });
     $("#resp_h1").fitText(0.7, { minFontSize: '20px', maxFontSize: '150px' });
 
@@ -131,5 +126,4 @@ function openFirstPanel() {
     });
 
 })(jQuery);
->>>>>>> c5916fb684b917f081c30a8bfaf0e792c0c4ec18
 });

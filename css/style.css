@@ -182,11 +182,11 @@ header ul li:not(:nth-last-child(-n+2)):hover::after{
 .feature {
 
 }
-<<<<<<< HEAD
+
 /*--  services  --*/
 .services-wraper{padding-top: 30px;}
-=======
->>>>>>> c5916fb684b917f081c30a8bfaf0e792c0c4ec18
+
+
 .services .fa {line-height: 4.2857rem;}
 /*--------  services2  --------*/
 .accordion {
@@ -544,8 +544,6 @@ font-size: 14px;}
 }
 
 
-<<<<<<< HEAD
-
 .testimonial {
     background: #f8f8f8;
 }
@@ -566,5 +564,4 @@ font-size: 14px;}
  font: 300 1.7142rem "Roboto";
     line-height: 35px;
 }
-=======
->>>>>>> c5916fb684b917f081c30a8bfaf0e792c0c4ec18
+
