@@ -7,6 +7,7 @@
     <title>MoGo Creative Agency</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700,300italic,100italic|Kaushan+Script&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -22,11 +23,11 @@
                             <div class="logo pull-left"><a href="">MoGo</a></div>
                             <nav class="pull-right nav">
                                 <ul>
-                                    <li><a href="#">about</a></li>
-                                    <li><a href="#">service</a></li>
-                                    <li><a href="#">work</a></li>
-                                    <li><a href="#">blog</a></li>
-                                    <li><a href="#">contact</a></li>
+                                    <li><a href="#about">about</a></li>
+                                    <li><a href="#services">service</a></li>
+                                    <li><a href="#works">work</a></li>
+                                    <li><a href="#blog">blog</a></li>
+                                    <li><a href="#footer">contact</a></li>
                                     <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-search"></i></a></li>
                                 </ul>
@@ -134,7 +135,7 @@
                     <h3 class="section-heading">amazing services</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class="row services-wraper">
 
 
                 <div class="col-lg-4">
@@ -165,7 +166,7 @@
     </div>
 </div>
 </div>
-<div class="row">
+<div class="row services-wraper">
     <div class="col-lg-4">
         <div class="row">
             <div class="col-md-2"><i class="fa fa-search fa-fw"></i></div>
@@ -214,7 +215,7 @@
     </section>
     <section id="services2" class="services-sec">
         <div class="container section-pd">
-            <div class="row text-center">
+            <div class="row text-center section-header-mb">
                 <div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4">
                     <h3 class="section-subheading">Service</h3>
                     <h3 class="section-heading">what we do</h3>
@@ -275,7 +276,7 @@
                     <div class="team-img-wrap">
                         <div class="team-img-overlay"></div>
 -->
-    <div class="col-lg-4 col-md-4">
+    <div class="col-sm-4 col-md-4 col-lg-4">
 
         <div class="item-wraper">
             <div class="item-overlay">
@@ -294,7 +295,7 @@
         <h5 class="subhead-md">Graphic Design</h5>
 
     </div>
-    <div class="col-lg-4 col-md-4">
+    <div class="col-sm-4 col-md-4 col-lg-4">
 
         <div class="item-wraper">
             <div class="item-overlay">
@@ -313,7 +314,7 @@
         <h5 class="subhead-md">Graphic Design</h5>
 
     </div>
-    <div class="col-lg-4 col-md-4">
+    <div class="col-sm-4 col-md-4 col-lg-4">
 
         <div class="item-wraper">
             <div class="item-overlay">
@@ -451,14 +452,45 @@
     <section id="testimonal" class="testimonial">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="slider"></div>
+                <div class="col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                    <div class="owl-carousel">
+                        <div class="testimonial-wraper">
+                            <div class="row">
+                                <div class="col-md-2"><img src="images/testimonial-avatar1.png" alt="avatar"></div>
+                                <div class="col-md-10">
+                                    <p class="testimonial-quot">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                                    <div class="testimonial-name">John doe
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-wraper">
+                            <div class="row">
+                                <div class="col-md-2"><img src="images/testimonial-avatar1.png" alt="avatar"></div>
+                                <div class="col-md-10">
+                                    <p class="testimonial-quot">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                                    <div class="testimonial-name">John doe
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-wraper">
+                            <div class="row">
+                                <div class="col-md-2"><img src="images/testimonial-avatar1.png" alt="avatar"></div>
+                                <div class="col-md-10">
+                                    <p class="testimonial-quot">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                                    <div class="testimonial-name">John doe
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="clients" class="clients">
-        <div class="container section-pd">
+        <div class="container section-pd section-header-mb">
             <div class="row text-center section-header-mb">
                 <div class="col-lg-4 col-md-4 col-lg-offset-4">
                     <h3 class="section-subheading">Happy Clients</h3>
@@ -686,6 +718,7 @@ incididunt ut labore</h5>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.spincrement.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="script.js"></script>
 </body>
 

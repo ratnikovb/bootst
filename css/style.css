@@ -144,6 +144,12 @@ header ul li:not(:nth-last-child(-n+2)):hover::after{
     color: #fff;
     font-size: 25px;
 }
+.about .item-wraper{
+    max-width:360px;
+    padding-top: 30px;
+    margin: 0 auto;
+
+}
 
 /*---------    facts    ---------*/
 #facts {
@@ -173,6 +179,8 @@ header ul li:not(:nth-last-child(-n+2)):hover::after{
 .feature {
 
 }
+/*--  services  --*/
+.services-wraper{padding-top: 30px;}
 .services .fa {line-height: 4.2857rem;}
 /*--------  services2  --------*/
 .accordion {
@@ -308,11 +316,11 @@ header ul li:not(:nth-last-child(-n+2)):hover::after{
 
 
 #clients {
-    background: url('../images/clients-bg.jpg');
+    background:cover top center url('../images/clients-bg.jpg');
 }
 
 #map {
-    background:url('../images/map-bg.jpg');
+    background:cover top center url('../images/map-bg.jpg');
 }
 
 .description-header {
@@ -530,3 +538,24 @@ font-size: 14px;}
 }
 
 
+
+.testimonial {
+    background: #f8f8f8;
+}
+
+.testimonial-name {
+    font: 400 1.7142rem "Kaushan Script";
+}.testimonial-name::before{
+    display: block;
+    content: '';
+    background-color: #f38181;
+    width: 60px;
+    height: 3px;
+    position: absolute;
+    left: calc(50% - 30px);
+    bottom: 0.0714rem;}
+
+.testimonial-quot {
+ font: 300 1.7142rem "Roboto";
+    line-height: 35px;
+}
