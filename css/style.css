@@ -11,9 +11,9 @@ a:hover, a:focus{
     visibility: hidden;
     content: "";
 }
-.no-padding{
-    padding-right: 0;
+.no-padding {
     padding-left: 0;
+    padding-right: 0;
 }
 .row.no-gutters {
    margin-right: 0;
@@ -32,17 +32,7 @@ img{
     height: auto;
     max-width: 100%;
 }
-#banner{
-    background: url('../images/bg1.jpg') center top/cover no-repeat;
-    color:#fff;
-}
-.banner-overlay{
-    background: -moz-linear-gradient(top,  rgba(243,139,139,0.9)0%,  rgba(252,227,138,0.9)100%);
-    background: -webkit-linear-gradient(top,  rgba(243,139,139,0.9)0%,  rgba(252,227,138,0.9)100%);
-    background: linear-gradient(to bottom,  rgba(243,139,139,0.9)0%,  rgba(252,227,138,0.9)100%);
-    z-index: -1;
-}
-/*-------------header--------------*/
+/*--------    header    ---------*/
 .logo{
     font: bold 1.875rem "Montserrat";
     padding-top: 30px;
@@ -98,19 +88,77 @@ header ul li:not(:nth-last-child(-n+2)):hover::after{
     transform: scale(1, 1);
 }
 
+.head-md {
+    font: normal 1rem "Montserrat";
+    text-transform: uppercase;
+}
+
+.subhead-md {
+    font: 300 italic 1.1rem "Roboto";
+    color: #999999;
+}
+.section-subheading,.section-heading{
+    color: #333333;
+}
+.section-subheading {
+    font: normal 1.7142rem "kaushan script";
+    text-align: center;
+}
+.section-heading {
+    font:bold 2.1428rem "montserrat" ;
+    text-transform: uppercase;
+}
+.section-heading:after{
+    display: block;
+    content: '';
+    background-color: #f38181;
+    width: 60px;
+    height: 3px;
+    position: relative;
+    left: calc(50% - 30px);
+    bottom: -3.0714rem;
+    margin-bottom: 3rem;
+}
+
+.section-pd {
+    padding-top: 110px;
+    padding-bottom: 115px;
+}
+.section-header-text {
+    padding-top: 45px;
+    padding-bottom: 95px;
+    line-height: 1.7142rem !important;
+    font: 400 1rem "Roboto";
+    color: #999999;
+}
+
+.section-header-mb {
+    margin-bottom: 43px;
+}
+
 /*------------baner------------*/
+#banner{
+    background: url('../images/bg1.jpg') center top/cover no-repeat;
+    color:#fff;
+}
+.banner-overlay{
+    background: -moz-linear-gradient(top,  rgba(243,139,139,0.9)0%,  rgba(252,227,138,0.9)100%);
+    background: -webkit-linear-gradient(top,  rgba(243,139,139,0.9)0%,  rgba(252,227,138,0.9)100%);
+    background: linear-gradient(to bottom,  rgba(243,139,139,0.9)0%,  rgba(252,227,138,0.9)100%);
+    z-index: -1;
+}
 .banner-wrap{padding: 12.14rem 0 16.42rem}
-.banner h2{
+h2{
     font: 400 5.142rem "Kaushan Script";
 
 }
-.banner h1{
+h1{
     text-transform: uppercase;
     font: bold 10.714rem "Montserrat";
     line-height: 10rem;
 /*    word-wrap: break-word;*/
 }
-.banner h1:after{
+h1:after{
     display: block;
     content: '';
     background-color: #fff;
@@ -151,12 +199,10 @@ header ul li:not(:nth-last-child(-n+2)):hover::after{
 
 }
 
-
 /*---------    facts    ---------*/
 #facts {
     background: #95e1d3;
 }
-
 .counts-item {
     width: 20%;
     float: left;
@@ -180,8 +226,30 @@ header ul li:not(:nth-last-child(-n+2)):hover::after{
 .feature {
 
 }
+.tablet-wraper {
+    margin-top: 132px;
+/*    background: fixed no-repeat url('../images/pagelayout.jpg');*/
+      max-height: 1024px;
+    max-width: 768px;
+    position: relative;
+    border-image-source: url('../images/display-bg.png');
+    border-image-slice: 132 48 132 48;
+    border-image-width: 132px 48px 132px 48px;
+    border-image-outset: 132px 48px 132px 48px;
+    border-style: solid;
+    overflow: hidden;
+    /* border-image-repeat: stretch stretch; */
+    /* border-image-repeat: round;*/
+}
+.tablet-inner {
+   height: 1024px;
+    width: 768px;
+    min-height: 400px;
+    background: transparent;
 
-/*--  services  --*/
+/*    position: absolute;*/
+}
+/*--------  services  --------*/
 .services-wraper{padding-top: 30px;}
 
 
@@ -295,36 +363,14 @@ header ul li:not(:nth-last-child(-n+2)):hover::after{
 /*   display: block;*/
     opacity: 1;
 }
-/*------       blog       ------*/
-
-.blog-item-::before{
-    content: "";
-    width: 100%;
-    background:#e5e5e5;
-    height: 1px;
-}
-.fa-eye, .fa-commenting{
-    color: #95e1d3;
-    font-size: 1.5rem;
-}
-/*
-.blog-item-details {
-    display: inline-block;
-}
-*/
-.blog-item-views{
-    margin-right: 1.4285rem;}
-.blog-item-views,.blog-item-coments{
-    display: inline-block;
-}
 
 
 #clients {
-    background:cover top center url('../images/clients-bg.jpg');
+    background:top center/cover url('../images/clients-bg.jpg');
 }
 
 #map {
-    background:cover top center url('../images/map-bg.jpg');
+    background:top center/cover url('../images/map-bg.jpg');
 }
 
 .description-header {
@@ -345,45 +391,58 @@ header ul li:not(:nth-last-child(-n+2)):hover::after{
     font-size: 2.285rem;
 
 }
-.section-subheading,.section-heading{
-    color: #333333;
+/*------------------------*/
+#quotes {
+    background: #f8f8f8;
 }
-.section-subheading {
-    font: normal 1.7142rem "kaushan script";
-    text-align: center;
+.testimonial-wraper{
+    padding: 65px 0;
+}
+.testimonial-wraper .fa {
+    color: #95e1d3;
+    font-size: 64px;
+}
+.testimonial-wraper .fa-border{
+    padding: .3em .35em .25em;
+    border: solid .07em #95e1d3;
+/*     border-radius: .1em; */
+}
+/*---------  slider  ---------*/
+.owl-carousel .owl-controls .owl-nav .owl-prev .fa,
+.owl-carousel .owl-controls .owl-nav .owl-next .fa{
+    font-size: 27px;
+    position: absolute;
+}
+.owl-carousel .owl-controls .owl-nav .owl-prev .fa{
+    top: 38%;
+    left: -3%;
+}
+.owl-carousel .owl-controls .owl-nav .owl-next .fa{
+    top: 38%;
+    right: -3%;
 }
 
-.section-heading {
-    font:bold 2.1428rem "montserrat" ;
-    text-transform: uppercase;
+.testimonial-name {
+    font: 400 1.7142rem "Kaushan Script";
+/*    padding-left: 60px;*/
 }
-.section-heading:after{
-    display: block;
+.testimonial-name::before{
+    display: inline-block;
     content: '';
     background-color: #f38181;
     width: 60px;
     height: 3px;
-    position: absolute;
-    left: calc(50% - 30px);
-    bottom: -3.0714rem;
+    /* position: absolute; */
+    left: 14px;
+    /* bottom: 0.0714rem; */
+    margin-right: 7px;
 }
 
-.section-pd {
-    padding-top: 110px;
-    padding-bottom: 115px;
+.testimonial-quot {
+ font:italic 100 1.7142rem "Roboto";
+    line-height: 35px;
 }
-
-.section-header-text {
-    padding-top: 45px;
-    padding-bottom: 95px;
-    line-height: 1.7142rem !important;
-    font: 400 1rem "Roboto";
-    color: #999999;
-}
-
-.section-header-mb {
-    margin-bottom: 43px;
-}
+/*--------   Map   ----------*/
 
 .map-btn {
     display: inline-block;
@@ -407,18 +466,29 @@ header ul li:not(:nth-last-child(-n+2)):hover::after{
     left: calc(50% - 30px);
     bottom: -3.0714rem;
 }
+/*
 .map i{
 
 }
+*/
 
-.head-md {
-    font: normal 1rem "Montserrat";
-    text-transform: uppercase;
+/*------       blog       ------*/
+
+.blog-item-::before{
+    content: "";
+    width: 100%;
+    background:#e5e5e5;
+    height: 1px;
 }
-
-.subhead-md {
-    font: 300 italic 1.1rem "Roboto";
-    color: #999999;
+.fa-eye, .fa-commenting{
+    color: #95e1d3;
+    font-size: 1.5rem;
+}
+.blog .blog-item-details .subhead-md{
+    display: inline-block;
+}
+.blog .blog-item-details .subhead-md:last-of-type{
+    padding-left: 18px;
 }
 /*---------footer----------*/
 #footer {
@@ -498,17 +568,20 @@ input[type="email"]::-webkit-input-placeholder {
     border: none;
 
 }
-.subsc-btn::active{
+.subsc-btn:active{
     border: none;
 }
+
 /*----- Media queries -----*/
 
-
 @media (max-width:480px){
+/*
     .banner h1{
         line-height: 4rem;
-    }    html {
-        font-size: 9px;
+    }
+*/
+    html {
+        font-size: 12px;
     }
 
 }
@@ -538,29 +611,24 @@ font-size: 14px;}
     }
 }*/
 
-.map {
+
+
+
+
+.phone-wraper {
+    margin-top:115px;
+    max-height: 788px;
+    max-width: 375px;
+    border-image-slice: 118 28 112 32;
+    border-image-width: 118px 28px 112px 32px;
+    border-image-outset: 118px 28px 112px 32px;
+    border-image-repeat: stretch repeat;
+    border-image-source: url(../images/phoneborder.png);
 
 }
 
-
-.testimonial {
-    background: #f8f8f8;
+.phone-inner {
+    height: 560px;
+    width: 316px;
+    background: transparent;
 }
-
-.testimonial-name {
-    font: 400 1.7142rem "Kaushan Script";
-}.testimonial-name::before{
-    display: block;
-    content: '';
-    background-color: #f38181;
-    width: 60px;
-    height: 3px;
-    position: absolute;
-    left: calc(50% - 30px);
-    bottom: 0.0714rem;}
-
-.testimonial-quot {
- font: 300 1.7142rem "Roboto";
-    line-height: 35px;
-}
-
