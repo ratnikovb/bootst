@@ -155,7 +155,7 @@ h2{
 h1{
     text-transform: uppercase;
     font: bold 10.714rem "Montserrat";
-    line-height: 10rem;
+/*    line-height: 10rem;*/
 /*    word-wrap: break-word;*/
 }
 h1:after{
@@ -227,11 +227,11 @@ h1:after{
 
 }
 .tablet-wraper {
-    margin-top: 132px;
+    margin: 132px 0;
 /*    background: fixed no-repeat url('../images/pagelayout.jpg');*/
-      max-height: 1024px;
-    max-width: 768px;
-    position: relative;
+      height: 1024px;
+    width: 768px;
+    position: absolute;
     border-image-source: url('../images/display-bg.png');
     border-image-slice: 132 48 132 48;
     border-image-width: 132px 48px 132px 48px;
@@ -247,7 +247,7 @@ h1:after{
     min-height: 400px;
     background: transparent;
 
-/*    position: absolute;*/
+    position: relative;
 }
 /*--------  services  --------*/
 .services-wraper{padding-top: 30px;}
@@ -464,7 +464,7 @@ h1:after{
     height: 3px;
     position: absolute;
     left: calc(50% - 30px);
-    bottom: -3.0714rem;
+    bottom: 4.0714rem;
 }
 /*
 .map i{
@@ -617,18 +617,26 @@ font-size: 14px;}
 
 .phone-wraper {
     margin-top:115px;
-    max-height: 788px;
-    max-width: 375px;
-    border-image-slice: 118 28 112 32;
-    border-image-width: 118px 28px 112px 32px;
-    border-image-outset: 118px 28px 112px 32px;
+    max-height: 393px;
+    max-width: 222px;
+    border-image-slice: 82 20 79 23;
+    border-image-width: 82px 20px 79px 23px;
+    border-image-outset: 82px 20px 79px 23px;
     border-image-repeat: stretch repeat;
     border-image-source: url(../images/phoneborder.png);
 
 }
 
 .phone-inner {
-    height: 560px;
-    width: 316px;
+    height: 393px;
+    width: 222px;
     background: transparent;
+}
+
+.tablet-container {
+    position: relative;
+    right: 30%;
+    overflow: hidden;
+    z-index: 10;
+
 }
