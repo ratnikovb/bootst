@@ -231,13 +231,14 @@ h1:after{
 /*    background: fixed no-repeat url('../images/pagelayout.jpg');*/
       height: 1024px;
     width: 768px;
-    position: absolute;
+    position: relative;
     border-image-source: url('../images/display-bg.png');
     border-image-slice: 132 48 132 48;
     border-image-width: 132px 48px 132px 48px;
     border-image-outset: 132px 48px 132px 48px;
     border-style: solid;
     overflow: hidden;
+    right: 30%;
     /* border-image-repeat: stretch stretch; */
     /* border-image-repeat: round;*/
 }
@@ -634,9 +635,11 @@ font-size: 14px;}
 }
 
 .tablet-container {
+/*
     position: relative;
     right: 30%;
     overflow: hidden;
     z-index: 10;
+*/
 
 }
