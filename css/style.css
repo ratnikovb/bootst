@@ -227,27 +227,26 @@ h1:after{
 
 }
 .tablet-wraper {
-    margin: 132px 0;
-/*    background: fixed no-repeat url('../images/pagelayout.jpg');*/
-      height: 1024px;
-    width: 768px;
+        margin: 132px 0;
+    /* background: fixed no-repeat url('../images/pagelayout.jpg'); */
+    height: 836px;
+    width: 628px;
     position: relative;
-    border-image-source: url('../images/display-bg.png');
-    border-image-slice: 132 48 132 48;
-    border-image-width: 132px 48px 132px 48px;
-    border-image-outset: 132px 48px 132px 48px;
+    border-image-source: url('../images/display-bg1.png');
+    border-image-slice: 110 39 108 39;
+    border-image-width: 110px 39px 108px 39px;
+    border-image-outset: 110px 39px 108px 39px;
     border-style: solid;
     overflow: hidden;
     right: 30%;
     /* border-image-repeat: stretch stretch; */
-    /* border-image-repeat: round;*/
+    /* border-image-repeat: round; */
 }
 .tablet-inner {
-   height: 1024px;
-    width: 768px;
+   height: 836px;
+    width: 628px;
     min-height: 400px;
     background: transparent;
-
     position: relative;
 }
 /*--------  services  --------*/
@@ -642,4 +641,8 @@ font-size: 14px;}
     z-index: 10;
 */
 
+}
+
+.feature-device-descr {
+    padding-top: 200px;
 }
