@@ -106,4 +106,15 @@ $(document).ready(function () {
             hideModal('#mapModal');
         });
     });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 800){
+            $("#scrl_top_btn").fadeIn();
+        }
+        else{
+            $("#scrl_top_btn").fadeOut();
+        }
+    })
+    $("#scrl_top_btn").click(function (){
+        $("body").animate({ scrollTop:0}, 500);
+    })
 });

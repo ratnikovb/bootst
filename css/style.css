@@ -1,4 +1,5 @@
 *{margin: 0;padding: 0;}
+
 a{
     text-decoration: none;
     color: inherit;}
@@ -483,6 +484,7 @@ h1:after{
 .fa-eye, .fa-commenting{
     color: #95e1d3;
     font-size: 1.5rem;
+    padding-right: 5px;
 }
 .blog .blog-item-details .subhead-md{
     display: inline-block;
@@ -613,8 +615,6 @@ font-size: 14px;}
 
 
 
-
-
 .phone-wraper {
     margin-top:115px;
     max-height: 393px;
@@ -640,9 +640,42 @@ font-size: 14px;}
     overflow: hidden;
     z-index: 10;
 */
-
 }
 
 .feature-device-descr {
     padding-top: 200px;
+}
+
+.feature-device-descr .head-md{
+    font-size:   1.875rem;
+    padding-bottom: 1.5rem;
+}
+.scrl-top-btn .fa-chevron-circle-up {
+    display: inline-block;
+    font-size: 50px;
+    line-height: 50px;
+    color: #fce38a;
+    transition: all ease 500ms;
+}
+.scrl-top-btn {
+    width: 50px;
+    height: 50px;
+/*    border-radius: 50%;*/
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    text-align: center;
+    line-height: 2rem;
+    vertical-align: middle;
+    transition: all ease 300ms;
+    opacity: 0.5;
+
+}
+
+.scrl-top-btn:hover .fa-chevron-circle-up{
+    color: #f38181;
+}
+.scrl-top-btn:hover{
+
+    opacity: 1;
 }
