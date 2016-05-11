@@ -88,6 +88,9 @@ header ul li:not(:nth-last-child(-n+2))::after{
 header ul li:not(:nth-last-child(-n+2)):hover::after{
     transform: scale(1, 1);
 }
+.navbar-nav>li>a{
+    padding: 0 0;
+}
 .navbar-header{
     width: 100%;
 }
@@ -238,9 +241,8 @@ h1:after{
     color: #fff;
 }
 
-.feature {
+/*-------feature--------- */
 
-}
 .tablet-wraper {
         margin: 132px 0;
     /* background: fixed no-repeat url('../images/pagelayout.jpg'); */
@@ -264,6 +266,50 @@ h1:after{
     background: transparent;
     position: relative;
 }
+
+.phone-wraper {
+    margin-top:115px;
+    max-height: 393px;
+    max-width: 222px;
+    border-image-slice: 82 20 79 23;
+    border-image-width: 82px 20px 79px 23px;
+    border-image-outset: 82px 20px 79px 23px;
+    border-image-repeat: stretch repeat;
+    border-image-source: url(../images/phoneborder.png);
+
+}
+
+.phone-inner {
+    height: 393px;
+    width: 222px;
+    background: transparent;
+}
+
+.tablet-container {
+/*
+    position: relative;
+    right: 30%;
+    overflow: hidden;
+    z-index: 10;
+*/
+}
+
+.feature-device-descr {
+    padding-top: 200px;
+}
+
+.feature-device-descr .head-md{
+    font-size:   1.875rem;
+    padding-bottom: 1.5rem;
+}
+.feature-tablet-sm {
+    position: relative;
+    right: 30%;}
+
+.feature-phone-sm {
+    padding: 30px 0;
+}
+
 /*--------  services  --------*/
 .services-wraper{padding-top: 30px;}
 
@@ -481,11 +527,7 @@ h1:after{
     left: calc(50% - 30px);
     bottom: 4.0714rem;
 }
-/*
-.map i{
 
-}
-*/
 
 /*------       blog       ------*/
 
@@ -584,87 +626,35 @@ input[type="email"]::-webkit-input-placeholder {
     border: none;
 
 }
+/*---- scrollTop ---*/
+.scrl-top-btn .fa-chevron-circle-up {
+  display: inline-block;
+    font-size: 9vh;
+    line-height: 9vh;
+    color: #fce38a;
+    transition: all ease 500ms;
+}
+.scrl-top-btn {
+     position: fixed;
+    /* width: 50px; */
+    /* height: 50px; */
+    /* border-radius: 50%; */
+    /* text-align: center; */
+    /* line-height: 2rem; */
+    top: 90vh;
+    left: 85vw;
+    vertical-align: middle;
+    transition: all ease 300ms;
+    opacity: 0.5;
+}
+.scrl-top-btn:hover .fa-chevron-circle-up{
+    color: #f38181;
+}
+.scrl-top-btn:hover{
+    opacity: 1;
+}
 .subsc-btn:active{
     border: none;
-}
-
-/*----- Media queries -----*/
-
-@media (max-width:480px){
-/*
-    .banner h1{
-        line-height: 4rem;
-    }
-*/
-    html {
-        font-size: 12px;
-    }
-
-}
-/*
-@media (min-width:768px) {
-    html {
-        font-size: 12px;
-    }
-}
-*/
-
-@media (max-width:768px) {
-    .counts-item {
-        float: none;
-        width: 100%;
-        border-left:1px solid #b5eae0;
-        border-right:1px solid #b5eae0;
-    }
-}
-
-/*
-@media (min-width:992px) {
-    html{
-font-size: 14px;}
-    }
-@media (min-width:1200px) {
-    html {
-        font-size: 14px;
-    }
-}*/
-
-
-
-.phone-wraper {
-    margin-top:115px;
-    max-height: 393px;
-    max-width: 222px;
-    border-image-slice: 82 20 79 23;
-    border-image-width: 82px 20px 79px 23px;
-    border-image-outset: 82px 20px 79px 23px;
-    border-image-repeat: stretch repeat;
-    border-image-source: url(../images/phoneborder.png);
-
-}
-
-.phone-inner {
-    height: 393px;
-    width: 222px;
-    background: transparent;
-}
-
-.tablet-container {
-/*
-    position: relative;
-    right: 30%;
-    overflow: hidden;
-    z-index: 10;
-*/
-}
-
-.feature-device-descr {
-    padding-top: 200px;
-}
-
-.feature-device-descr .head-md{
-    font-size:   1.875rem;
-    padding-bottom: 1.5rem;
 }
 .scrl-top-btn .fa-chevron-circle-up {
   display: inline-block;
@@ -692,3 +682,53 @@ font-size: 14px;}
 .scrl-top-btn:hover{
     opacity: 1;
 }
+
+/*----- Media queries -----*/
+
+@media (max-width:480px){
+/*
+    .banner h1{
+        line-height: 4rem;
+    }
+*/
+    html {
+        font-size: 12px;
+    }
+
+     nav ul li{
+        padding: 7px 0;
+    }
+    .feature-device-descr {
+    padding-top: 50px;
+}
+}
+/*
+@media (min-width:768px) {
+    html {
+        font-size: 12px;
+    }
+}
+*/
+
+@media (max-width:768px) {
+    .counts-item {
+        float: none;
+        width: 100%;
+        border-left:1px solid #b5eae0;
+        border-right:1px solid #b5eae0;
+    }
+
+}
+
+/*
+@media (min-width:992px) {
+    html{
+font-size: 14px;}
+    }
+@media (min-width:1200px) {
+    html {
+        font-size: 14px;
+    }
+}*/
+
+
