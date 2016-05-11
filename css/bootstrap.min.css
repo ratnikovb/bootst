@@ -3056,7 +3056,7 @@ tbody.collapse.in {
 
 @media (min-width:768px) {
     .navbar-header {
-        float: left
+/*        float: left*/
     }
 }
 
@@ -3259,7 +3259,7 @@ tbody.collapse.in {
 
 @media (min-width:768px) {
     .navbar-nav {
-        float: left;
+/*        float: left;*/
         margin: 0
     }
     .navbar-nav>li {

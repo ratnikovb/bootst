@@ -49,7 +49,7 @@ nav ul li{
     text-transform: uppercase;
     font: 400 1.1428rem "Montserrat";
     padding:12px 0;
-    margin-right: 50px;
+    margin-right: 30px;
     display: inline-block;
     position: relative;
 }
@@ -88,7 +88,21 @@ header ul li:not(:nth-last-child(-n+2))::after{
 header ul li:not(:nth-last-child(-n+2)):hover::after{
     transform: scale(1, 1);
 }
+.navbar-header{
+    width: 100%;
+}
+.navbar-brand {
+    padding: 30px 15px;}
 
+.navbar-toggle .icon-bar{
+    width: 35px;
+    height: 3px;
+    background: #fff;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 7px;
+}
+/*-------------------------*/
 .head-md {
     font: normal 1rem "Montserrat";
     text-transform: uppercase;
@@ -599,6 +613,8 @@ input[type="email"]::-webkit-input-placeholder {
     .counts-item {
         float: none;
         width: 100%;
+        border-left:1px solid #b5eae0;
+        border-right:1px solid #b5eae0;
     }
 }
 
@@ -651,31 +667,28 @@ font-size: 14px;}
     padding-bottom: 1.5rem;
 }
 .scrl-top-btn .fa-chevron-circle-up {
-    display: inline-block;
-    font-size: 50px;
-    line-height: 50px;
+  display: inline-block;
+    font-size: 9vh;
+    line-height: 9vh;
     color: #fce38a;
     transition: all ease 500ms;
 }
 .scrl-top-btn {
-    width: 50px;
-    height: 50px;
-/*    border-radius: 50%;*/
-    position: fixed;
-    top: 90%;
-    left: 95%;
-    text-align: center;
-    line-height: 2rem;
+     position: fixed;
+    /* width: 50px; */
+    /* height: 50px; */
+    /* border-radius: 50%; */
+    /* text-align: center; */
+    /* line-height: 2rem; */
+    top: 90vh;
+    left: 85vw;
     vertical-align: middle;
     transition: all ease 300ms;
     opacity: 0.5;
-
 }
-
 .scrl-top-btn:hover .fa-chevron-circle-up{
     color: #f38181;
 }
 .scrl-top-btn:hover{
-
     opacity: 1;
 }
