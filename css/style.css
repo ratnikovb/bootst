@@ -373,8 +373,9 @@ h1:after{
   display: inline-block;
   vertical-align: middle;
   background: #fce38a;
-    width: 56px;
-    height: 56px;
+    max-width: 56px;
+    min-width: 44px;
+    max-height: 56px;
     line-height: 56px;
 }
 
