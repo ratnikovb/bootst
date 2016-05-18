@@ -38,9 +38,12 @@ img{
     font: bold 1.875rem "Montserrat";
     padding-top: 30px;
 }
+.navbar-toggle {
+    margin-top: 18px;
+}
 nav ul{
     list-style: none;
-    padding: 40px 0 0;
+    padding: 45px 0 0;
     float: right;
     margin: 0;
 }
@@ -470,6 +473,9 @@ h1:after{
 /*     border-radius: .1em; */
 }
 /*---------  slider  ---------*/
+.owl-carousel .owl-item img{
+        width: auto;
+}
 .owl-carousel .owl-controls .owl-nav .owl-prev .fa,
 .owl-carousel .owl-controls .owl-nav .owl-next .fa{
     font-size: 27px;
@@ -486,7 +492,7 @@ h1:after{
 
 .testimonial-name {
     font: 400 1.7142rem "Kaushan Script";
-/*    padding-left: 60px;*/
+/*    padding-left: 60px;
 }
 .testimonial-name::before{
     display: inline-block;
@@ -710,7 +716,9 @@ input[type="email"]::-webkit-input-placeholder {
     }
 }
 */
+@media (max-width:767px){
 
+}
 @media (max-width:768px) {
     .counts-item {
         float: none;
