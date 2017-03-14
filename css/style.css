@@ -279,6 +279,7 @@ h1:after{
     border-image-outset: 82px 20px 79px 23px;
     border-image-repeat: stretch repeat;
     border-image-source: url(../images/phoneborder.png);
+    border-style: solid;
 
 }
 
